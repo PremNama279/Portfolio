@@ -1,0 +1,22 @@
+{
+  "name": "dkportfolio",
+  "version": "1.0.0",
+  "description": "Devulapelly Kushal's Portfolio Website",
+  "scripts": {
+    "build": "cd frontendd && npm run build",
+    "start": "cd frontendd && npm start",
+    "dev": "cd frontendd && npm start"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Devulapellykushal/dkportfolio.git"
+  },
+  "keywords": [
+    "portfolio",
+    "react",
+    "ai",
+    "developer"
+  ],
+  "author": "Devulapelly Kushal",
+  "license": "MIT"
+}

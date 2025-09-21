@@ -1,0 +1,13 @@
+{
+  "buildCommand": "cd frontendd && npm install && npm run build",
+  "outputDirectory": "frontendd/build",
+  "installCommand": "cd frontendd && npm install",
+  "devCommand": "cd frontendd && npm start",
+  "framework": "create-react-app",
+  "rewrites": [
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
