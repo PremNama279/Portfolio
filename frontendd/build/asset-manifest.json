@@ -1,0 +1,28 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b724ecfe.css",
+    "main.js": "/static/js/main.f8d6cf8a.js",
+    "static/media/presence.png": "/static/media/presence.904f94f75dfcc8a142e4.png",
+    "static/media/skin.png": "/static/media/skin.1ee0f08c572db26b3904.png",
+    "static/media/Dk.jpg": "/static/media/Dk.4f01761b570b3a9a5592.jpg",
+    "static/media/aibott.png": "/static/media/aibott.c31d0def9f76c71ae6c7.png",
+    "static/media/eda.png": "/static/media/eda.400dadb27cffeaa010fe.png",
+    "static/media/gans.png": "/static/media/gans.ac6c01693ecc05dbd13d.png",
+    "static/media/res.jpg": "/static/media/res.abba788192bc01844db9.jpg",
+    "static/media/diet.png": "/static/media/diet.95014b66a30f84d7c84a.png",
+    "static/media/fsd.jpg": "/static/media/fsd.11613dbdf314bd167fb2.jpg",
+    "static/media/aws.jpg": "/static/media/aws.57e9f991153a9eb71ba4.jpg",
+    "static/media/resume.pdf": "/static/media/resume.936b8a646e187e88867b.pdf",
+    "static/media/mlint.jpg": "/static/media/mlint.ae5392bae19fa03dc8e2.jpg",
+    "static/media/sridhar.jpeg": "/static/media/sridhar.52e6c91662cc7d1c94e5.jpeg",
+    "static/media/sharan.jpeg": "/static/media/sharan.fbe1fb9333f4a4c66b45.jpeg",
+    "static/media/dhiraj.jpeg": "/static/media/dhiraj.ca4f04c59bb0e0c5fb1c.jpeg",
+    "index.html": "/index.html",
+    "main.b724ecfe.css.map": "/static/css/main.b724ecfe.css.map",
+    "main.f8d6cf8a.js.map": "/static/js/main.f8d6cf8a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b724ecfe.css",
+    "static/js/main.f8d6cf8a.js"
+  ]
+}

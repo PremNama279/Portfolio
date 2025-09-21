@@ -1,0 +1,191 @@
+/* Small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    /* Adjust styles for small devices */
+  }
+  
+  /* Medium devices (tablets, 768px and down) */
+  @media only screen and (max-width: 768px) {
+    /* Adjust styles for medium devices */
+  }
+  
+  /* Large devices (laptops/desktops, 992px and down) */
+  @media only screen and (max-width: 992px) {
+    /* Adjust styles for large devices */
+  }
+  
+  /* Extra large devices (large laptops and desktops, 1200px and down) */
+  @media only screen and (max-width: 1200px) {
+    /* Adjust styles for extra large devices */
+  }
+  /* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: "Poppins", sans-serif;
+    background-color: black;
+    color: white;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+  }
+  html {
+    scroll-behavior: smooth;
+  }
+  body {
+    transition: background-color 0.5s ease, color 0.5s ease;
+  }
+  /* Light/Dark Theme */
+body.dark-theme {
+    background: transparent;
+    color: white;
+  }
+  
+  body.light-theme {
+    background: transparent;
+    color: black;
+  }
+  
+  .theme-toggle {
+    background: transparent;
+    color: white;
+    border: 2px solid white;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: 0.3s;
+  }
+  
+  .theme-toggle:hover {
+    background: white;
+    color: black;
+  }
+  .section {
+    padding: 80px 10%;
+    text-align: center;
+    color: #ffffff;
+    opacity: 0;
+    animation: fadeIn 1s ease-in-out forwards;
+    position: relative;
+    z-index: 1;
+    background-color: transparent;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; transform: translateY(30px); }
+    to { opacity: 1; transform: translateY(0); }
+  }
+  
+  .section-title {
+    font-size: 1.8rem;
+    font-weight: bold;
+    text-align: center;
+    text-shadow: 4px 3px 4px rgba(255, 152, 0, 0.5);
+    color: #ffffff;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #ffffff;
+    display: inline-block;
+    padding-bottom: 5px;
+  }
+
+.app-container {
+  position: relative;
+  min-height: 100vh;
+  width: 100%;
+  overflow-x: hidden;
+}
+
+.background-particles {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Ensure content is above particles */
+.section {
+  position: relative;
+  z-index: 1;
+  background-color: transparent;
+}
+
+/* Add a subtle gradient overlay to make particles more visible */
+.app-container::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at center, transparent 0%, rgba(0, 0, 0, 0.3) 100%);
+  z-index: 0;
+  pointer-events: none;
+}
+
+/* Media Queries */
+@media only screen and (max-width: 600px) {
+  .section {
+    padding: 40px 5%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .section {
+    padding: 60px 7%;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .section {
+    padding: 70px 8%;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .section {
+    padding: 75px 9%;
+  }
+}
+
+/* Anisquares Background Pattern */
+.anisquares-background {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: linear-gradient(rgba(255, 255, 255, 0.1) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(255, 255, 255, 0.1) 1px, transparent 1px);
+  background-size: 40px 40px;
+  z-index: -1;
+  pointer-events: none;
+  animation: moveAnisquares 0.5s linear infinite;
+}
+
+@keyframes moveAnisquares {
+  from {
+    transform: translate(-40px, 40px);
+  }
+  to {
+    transform: translate(0, 0);
+  }
+}
+
+/* Hover effect for interactive elements */
+.anisquares-background.interactive {
+  pointer-events: auto;
+}
+
+.anisquares-background.interactive:hover {
+  background-image: linear-gradient(rgba(255, 255, 255, 0.2) 1px, transparent 1px),
+                    linear-gradient(90deg, rgba(255, 255, 255, 0.2) 1px, transparent 1px);
+  transition: background-image 0.3s ease;
+}

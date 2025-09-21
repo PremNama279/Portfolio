@@ -1,0 +1,240 @@
+/* FloatingNavbar.module.css */
+.floatingNavbar {
+  position: fixed;
+  top: 2.5rem;
+  left: 0;
+  right: 0;
+  margin: 0 auto;
+  max-width: 1200px;
+  z-index: 5000;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: rgba(8, 8, 14, 0.85);
+  border-radius: 9999px;
+  box-shadow: 0 4px 24px rgba(0,0,0,0.15), 0 1.5px 0px 0px rgba(25,28,33,0.02), 0 0 0 1px rgba(25,28,33,0.08);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  padding: 0.5rem 2rem;
+  border: 1px solid rgba(255,255,255,0.15);
+  transition: box-shadow 0.2s, background 0.2s;
+  width: 100%;
+  min-width: 220px;
+  overflow-x: auto;
+}
+
+.floatingNavbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1rem;
+  margin: 0 0.75rem;
+  padding: 0.25rem 0.75rem;
+  border-radius: 9999px;
+  transition: background 0.2s, color 0.2s;
+  position: relative;
+  display: flex;
+  align-items: center;
+}
+
+.floatingNavbar a:hover {
+  /* background: rgba(254, 254, 254, 0.12); */
+  color: #ded3ff;
+}
+
+.floatingNavbar .resumeBtn {
+  border: 1px solid rgba(167, 139, 243, 0.4);
+  color: #fff;
+  background: transparent;
+  font-weight: 600;
+  padding: 0.4rem 1.2rem;
+  margin-left: 1rem;
+  border-radius: 9999px;
+  transition: background 0.2s, color 0.2s, border 0.2s;
+  position: relative;
+}
+
+.floatingNavbar .resumeBtn:hover {
+  /* background: rgba(167, 139, 243, 0.15); */
+  color: #009f1d;
+  /* border-color: #a78bf3; */
+}
+
+.floatingNavbar .resumeBtn span:last-child {
+  display: block;
+  position: absolute;
+  left: 25%;
+  right: 25%;
+  bottom: 0;
+  height: 2px;
+  background: linear-gradient(90deg, transparent, #60a5fa, transparent);
+}
+
+.backgroundSelectorWrapper {
+  margin: 0 0.75rem;
+  display: flex;
+  align-items: center;
+}
+
+.backgroundSelectorWrapper :global(.background-select) {
+  background: transparent;
+  color: #fff;
+  border: 1px solid rgba(167, 139, 243, 0.4);
+  padding: 0.4rem 1.2rem;
+  border-radius: 9999px;
+  font-size: 0.95rem;
+  cursor: pointer;
+  transition: all 0.2s ease;
+}
+
+.backgroundSelectorWrapper :global(.background-select:hover) {
+  background: rgba(167, 139, 243, 0.15);
+  border-color: #a78bf3;
+}
+
+.backgroundSelectorWrapper :global(.background-select option) {
+  background: rgba(30, 30, 40, 0.95);
+  color: #fff;
+}
+
+.iconOnly {
+  display: none;
+}
+.textOnly {
+  display: inline;
+}
+
+.menuButton {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  color: #fff;
+  cursor: pointer;
+  margin-right: 1rem;
+  z-index: 6000;
+}
+.hamburgerIcon {
+  font-size: 2rem;
+}
+.showNav {
+  display: flex;
+}
+.hideNav {
+  display: none;
+}
+.dropdownBackdrop {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0,0,0,0.45);
+  z-index: 9998;
+  animation: fadeInBackdrop 0.2s;
+}
+@keyframes fadeInBackdrop {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+.dropdownMenu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100vw;
+  background: rgba(8, 8, 14, 0.98);
+  border-radius: 0 0 1.5rem 1.5rem;
+  box-shadow: 0 8px 24px rgba(0,0,0,0.25);
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  z-index: 9999;
+  padding: 2.5rem 0.5rem 1rem 0.5rem;
+  max-height: 90vh;
+  overflow-y: auto;
+  animation: slideDownDropdown 0.25s cubic-bezier(0.4,0,0.2,1);
+}
+@keyframes slideDownDropdown {
+  from { transform: translateY(-40px); opacity: 0; }
+  to { transform: translateY(0); opacity: 1; }
+}
+.closeButton {
+  position: absolute;
+  top: 1rem;
+  right: 1.2rem;
+  background: none;
+  border: none;
+  color: #fff;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 10000;
+  padding: 0.2rem 0.5rem;
+  transition: color 0.2s;
+}
+.closeButton:hover {
+  color: #a78bf3;
+}
+.dropdownItem {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1.1rem;
+  padding: 0.75rem 1.5rem;
+  border-radius: 0.75rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  transition: background 0.2s, color 0.2s;
+}
+.dropdownItem:hover {
+  background: rgba(167, 139, 243, 0.15);
+  color: #a78bf3;
+}
+.dropdownIcon {
+  font-size: 1.5rem;
+}
+.dropdownText {
+  font-size: 1.1rem;
+}
+
+@media (max-width: 600px) {
+  .floatingNavbar {
+    padding: 0.5rem 0.5rem;
+    max-width: 98vw;
+    width: 98vw;
+    min-width: unset;
+  }
+  .floatingNavbar a {
+    font-size: 0.95rem;
+    margin: 0 0.2rem;
+    padding: 0.25rem 0.4rem;
+  }
+  .floatingNavbar .resumeBtn {
+    margin-left: 0.3rem;
+    padding: 0.3rem 0.6rem;
+    font-size: 0.95rem;
+  }
+  .backgroundSelectorWrapper {
+    margin: 0 0.2rem;
+  }
+  .backgroundSelectorWrapper :global(.background-select) {
+    padding: 0.3rem 0.6rem;
+    font-size: 0.9rem;
+  }
+  .iconOnly {
+    display: inline;
+    font-size: 1.5rem;
+  }
+  .textOnly {
+    display: none;
+  }
+}
+
+@media (max-width: 500px) {
+  .menuButton {
+    display: block;
+  }
+  .showNav {
+    display: none;
+  }
+} 
