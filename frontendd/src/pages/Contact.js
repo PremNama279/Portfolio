@@ -29,13 +29,13 @@ const Contact = () => {
 *Email:* ${formData.email}
 *Message:* ${formData.message}
 
-*Submitted from:* Devulapelly Kushal Portfolio
+*Submitted from:* Devulapelly Kushal's Portfolio
 *Date:* ${new Date().toLocaleDateString()}
 *Time:* ${new Date().toLocaleTimeString()}
     `.trim();
 
     // WhatsApp API URL with the phone number
-    const phoneNumber = "6309251113";
+    const phoneNumber = "+916309251113";
     const encodedMessage = encodeURIComponent(whatsappMessage);
     const whatsappUrl = `https://wa.me/${phoneNumber}?text=${encodedMessage}`;
     
