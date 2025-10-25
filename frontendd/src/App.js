@@ -12,7 +12,6 @@ import Contact from "./pages/Contact";
 import Hero from "./pages/Hero";
 import Projects from "./pages/Projects";
 import Services from "./pages/Services";
-import Testimonials from "./pages/Testimonials";
 
 const App = () => {
   return (
@@ -88,13 +87,12 @@ const AppContent = () => {
   return (
     <>
       {renderBackground(currentBackground)}
-      <div className={`app-container ${darkMode ? "dark-theme" : "light-theme"}`}>
+      <div >
         <Navbar currentBackground={currentBackground} onBackgroundChange={setCurrentBackground} />
         <Hero />
         <About />
         <Services />
         <Projects />
-        <Testimonials />
         <Contact />
         <Footer />
       </div>

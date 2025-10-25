@@ -12,6 +12,7 @@ import { fadeInScale, staggerContainer } from "../utils/animations";
 import ProjectModal from "./ProjectModal";
 
 const Projects = () => {
+  // eslint-disable-next-line no-unused-vars
   const [hovered, setHovered] = useState(null);
   const [modalOpen, setModalOpen] = useState(false);
   const [selectedProject, setSelectedProject] = useState(null);

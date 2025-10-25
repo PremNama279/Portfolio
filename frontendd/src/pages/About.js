@@ -2,7 +2,7 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
-import img from "../assets/yes.jpeg";
+import img from "../assets/myprofilephoto.JPG";
 import { GlareCard } from "../components/GlareCard";
 import '../styles/About.css';
 import { fadeInUp, slideInLeft } from "../utils/animations";
@@ -59,14 +59,11 @@ const About = () => {
           animate={textInView ? "animate" : "initial"}
           variants={slideInLeft}
         >
-          {/* <p>My name is Devulapelly Kushal Kumar Reddy</span> and I am an accomplished full-stack developer with a deep passion for software development, machine learning, and cloud computing.</p> */}
-          <p>I’m <span className="highlight">Devulapelly Kushal Kumar Reddy</span>, an AI Context Engineer and Full-Stack Developer with hands-on experience in software development, machine learning, and building scalable AI-driven applications. My journey began as a remote freelancer, where I honed my full-stack and machine learning expertise across diverse domains, and has since grown into a strong focus on machine learning, agentic intelligence.</p>
-          <p>At NIT Warangal, I contributed as an R&D Intern on AgriHelp: AI-Powered Supply Chain Optimization with Agentic Intelligence. In this project, I designed a working AgriTech application that integrates multi-agent AI pipelines for decision support and supply chain optimization. I leveraged tools like Cursor, Claude code, Warp.dev, Claude Code, n8n, and Make.com to automate agentic workflows for real-world agricultural use cases.</p>
-
-<p>I actively engage with the Symbiotes.ai community, exploring generative AI, multi-agent systems, and edge deployments, while also serving as an NSS Coordinator, where I lead social initiatives and foster collaboration on campus.</p>
-          <p>Driven by curiosity and innovation, I aspire to build next-generation AI systems in agentic intelligence, healthcare, and AgriTech—while shaping my path as an entrepreneur creating technology with real-world impact.
-          </p>
-          <p>With over two years of hands-on experience in the software development field as a remote freelancer, I have honed my skills and expertise in various domains.</p> 
+          {/* <p>My name is Prem Sai Shankar Nama</span> and I am an accomplished full-stack developer with a deep passion for software development, machine learning, and cloud computing.</p> */}
+          <p>I’m <span className="highlight">Prem Sai Shankar Nama</span>, a passionate student of Artificial Intelligence and Computer Science with a strong interest in applying data-driven and intelligent systems to solve real-world challenges. I specialize in machine learning, data analysis, and full-stack development, combining technical depth with creativity to build impactful solutions.</p>
+          <p>Throughout my academic journey, I have developed projects in areas like healthcare analytics, AI content generation, and deepfake detection, gaining hands-on experience in Python, scikit-learn, TensorFlow, and OpenCV. My work reflects both curiosity and discipline—whether it’s preprocessing complex datasets, training machine learning models, or visualizing insights for real-world applications.</p>
+          <p>I believe in continuous learning and innovation. As I pursue my Master’s in Artificial Intelligence, my goal is to explore how AI and data science can drive meaningful advancements in sectors like healthcare, automation, and intelligent systems.</p>
+          <p>Driven by curiosity and guided by purpose, I aspire to grow as a researcher and developer who builds technology that matters.</p>
         </motion.div>
         <motion.div 
           ref={imageRef}
@@ -77,7 +74,7 @@ const About = () => {
           variants={fadeInUp}
         >
           <GlareCard variant="primary" className="w-full">
-            <img src={img} alt="Kushal" />
+            <img src={img} alt="Prem Sai Shankar Nama" />
           </GlareCard>
         </motion.div>
       </div>

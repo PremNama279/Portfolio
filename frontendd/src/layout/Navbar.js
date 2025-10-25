@@ -1,4 +1,4 @@
-import logo from "../assets/dklogo.png";
+import logo from "../assets/NPlogo.png";
 
 import { useEffect, useState } from "react";
 import BackgroundSelector from "../components/BackgroundSelector";
@@ -53,7 +53,7 @@ const Navbar = ({ currentBackground, onBackgroundChange }) => {
       <div className="nav-container">
         <div className="nav-logo">
           <a href='#about-section' onClick={(e) => scrollToSection('about-section', e)}>
-            <img src={logo} alt="Kushal" className="nav-logo-img" />
+            <img src={logo} alt="Prem" className="nav-logo-img" />
           </a>
         </div>
         {/* Mobile Menu Button */}
@@ -87,7 +87,7 @@ const Navbar = ({ currentBackground, onBackgroundChange }) => {
             />
           </div>
           <a 
-            href="https://drive.google.com/file/d/10eh4m9ey6PPCXUK0l8ALWx6SI4Lh0NjA/view?usp=sharing" 
+            href="https://drive.google.com/file/d/1hgfzlRiKEXx-9n7S0mwJVW1GmT-5d6ZP/view?usp=drive_link" 
             target="_blank"
             rel="noopener noreferrer"
             className="nav-resume-btn"

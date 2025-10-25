@@ -18,7 +18,6 @@ const FloatingNav = ({ navItems, className, currentBackground, onBackgroundChang
     { name: "About", link: "#about-section", icon: "👤" },
     { name: "Services", link: "#services", icon: "🛠️" },
     { name: "Projects", link: "#projects", icon: "💻" },
-    { name: "Testimonials", link: "#testimonials", icon: "💬" },
     { name: "Contact", link: "#contact", icon: "📧" }
   ];
 

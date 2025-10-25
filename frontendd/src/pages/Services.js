@@ -1,10 +1,10 @@
 import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 import { useInView } from "react-intersection-observer";
-import awsImage from "../assets/aws.jpg";
+import awsImage from "../assets/DataAnalysis.JPG";
 import fsdImage from "../assets/fsd.jpg";
 import mlintImage from "../assets/mlint.jpg";
-import resImage from "../assets/res.jpg";
+import resImage from "../assets/WebsiteBuilding.JPG";
 import { GlareCard } from "../components/GlareCard";
 import "../styles/Services.css";
 import { staggerContainer, zoomIn } from "../utils/animations";
@@ -27,18 +27,18 @@ const Services = () => {
   const serviceCards = [
     {
       image: resImage,
-      title: "RESPONSIVE DESIGN",
-      description: "Improving user involvement with flexible designs that work smoothly across all types of devices"
+      title: "WEBSITE BUIDING",
+      description: "Building websites using HTML, CSS, JavaScript, React, Node.js, MySQL with user interaction and user experience in mind"
     },
     {
       image: fsdImage,
-      title: "FULL-STACK DEVELOPMENT",
-      description: "I use React-Flask/fastapi stack and MERN stack to build and deploy full-stack web and app applications efficiently."
+      title: "MODEL BUILDING",
+      description: "Driven by curiosity and passion to build innovative models using Scikit-learn, TensorFlow, PyTorch, and other machine learning libraries that help to solve real world problems" 
     },
     {
       image: awsImage,
-      title: "WORKFLOW AUTOMATION",
-      description: "Providing AI-driven marketing tools, automation agents, and integrations that streamline digital workflows using n8n and make.com."
+      title: "DATA ANALYSIS",
+      description: "Fueled by passion to make data come alive using Python, Pandas, NumPy, Matplotlib, Seaborn, Plotly, Tableau, Power BI , Excel, SQL and other data analysis tools with insight and purpose"
     },
     {
       image: mlintImage,

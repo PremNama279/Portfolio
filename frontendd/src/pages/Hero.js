@@ -17,6 +17,7 @@ const Hero = () => {
     }
   };
 
+  // eslint-disable-next-line no-unused-vars
   const handleAnimationComplete = () => {
     console.log('All letters have animated!');
   };
@@ -39,7 +40,7 @@ const Hero = () => {
           whileHover={{ scale: 1.2 }}
           whileTap={{ scale: 0.9 }}
         >
-          ↓
+          ⌄
         </motion.div>
       </motion.div>
     </section>

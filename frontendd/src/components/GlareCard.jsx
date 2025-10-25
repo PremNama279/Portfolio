@@ -32,6 +32,7 @@ export const GlareCard = ({
   const glareRef = useRef(null);
   const backgroundRef = useRef(null);
   const rotationRef = useRef(null);
+  // eslint-disable-next-line no-unused-vars
   const [isHovered, setIsHovered] = useState(false);
 
   const handlePointerMove = (e) => {

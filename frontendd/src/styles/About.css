@@ -25,16 +25,16 @@
     flex: 1;
   max-width: 55%;
   text-align: justify;
-  color: #e0e0e0;
+  color: #c6e6f165;
   font-size: 0.95rem;
   line-height: 1.6;
   padding: 20px;
   }
   
   .about-text .highlight {
-    color: #FFD700;
+    color: #ff001e;
     font-weight: bold;
-    text-shadow: 0 0 8px rgba(255, 215, 0, 0.3);
+    text-shadow: 0 0 8px rgba(255, 60, 0, 0.3);
   }
   img {
     max-width: 100%;
