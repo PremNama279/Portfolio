@@ -1,7 +1,7 @@
 import { motion } from "framer-motion";
 import React, { useState } from "react";
 import { useInView } from "react-intersection-observer";
-import imgAIBott from "../assets/aibott.png";
+//import imgAIBott from "../assets/aibott.png";
 import imgDiet from "../assets/diet.png";
 import imgEDA from "../assets/eda.png";
 import imgGANs from "../assets/gans.png";
@@ -22,19 +22,19 @@ const Projects = () => {
   });
 
   const projects = [
-    {
-      title: "AI Health Metrics Analyzer",
-      description: "An AI-powered tool that analyzes health metrics to generate personalized insights and responds to queries via a chatbot. Built a hybrid health insight generation engine using Python and Pandas to process user-uploaded health data (CSV). Integrated a React-based chatbot frontend with Gemini's API for real-time, context-aware health conversations. Deployed the backend on Render using Flask. Designed the system to provide visual health trends, risk alerts, and recommendations, improving user wellness engagement.",
-      image: imgAIBott,
-      slides: [
-        { title: "Dashboard", src: imgAIBott, button: "Learn More" },
-        { title: "EDA Insights", src: imgEDA, button: "Explore" },
-        { title: "Diet Chatbot", src: imgDiet, button: "Details" }
-      ],
-      demo: "https://your-demo-link.com/health-analyzer",
-      source: "https://github.com/yourusername/health-metrics-analyzer",
-      tech: ["#Python", "#ReactJS", "#Flask", "#GeminiAPI", "#Pandas"]
-    },
+    //{
+    //  title: "AI Health Metrics Analyzer",
+    //  description: "An AI-powered tool that analyzes health metrics to generate personalized insights and responds to queries via a chatbot. Built a hybrid health insight generation engine using Python and Pandas to process user-uploaded health data (CSV). Integrated a React-based chatbot frontend with Gemini's API for real-time, context-aware health conversations. Deployed the backend on Render using Flask. Designed the system to provide visual health trends, risk alerts, and recommendations, improving user wellness engagement.",
+    //  image: imgAIBott,
+    //  slides: [
+    //    { title: "Dashboard", src: imgAIBott, button: "Learn More" },
+    //    { title: "EDA Insights", src: imgEDA, button: "Explore" },
+    //    { title: "Diet Chatbot", src: imgDiet, button: "Details" }
+    //  ],
+    //  demo: "https://your-demo-link.com/health-analyzer",
+    //  source: "https://github.com/yourusername/health-metrics-analyzer",
+    //  tech: ["#Python", "#ReactJS", "#Flask", "#GeminiAPI", "#Pandas"]
+    //},
     {
       title: "Multi-Modal Deepfake Content Detection",
       description: "A full-stack AI application capable of detecting fake content across videos, images, and text. • Designed and deployed backend APIs using Flask, integrated with a React-based frontend for real-time uploads and results visualization. • Implemented machine learning models using TensorFlow, PyTorch, and scikit-learn to classify media as real or fake, and fine-tuned image and text classifiers using Hugging Face models. • Trained on datasets like the Deepfake Detection Challenge to enhance model performance and robustness. • Demonstrated expertise in Computer Vision, Natural Language Processing (NLP), and full-stack web development.",
@@ -68,7 +68,7 @@ const Projects = () => {
       slides: [
         { title: "Diet Home", src: imgDiet, button: "Learn More" },
         { title: "EDA Dashboard", src: imgEDA, button: "Explore" },
-        { title: "AI Health", src: imgAIBott, button: "Details" }
+        { title: "Dashboard", src: imgDiet, button: "Details" }  // Changed from imgAIBott to imgDiet
       ],
       demo: "https://your-demo-link.com/diet",
       source: "https://github.com/yourusername/diet-recommendation-system",
@@ -94,7 +94,7 @@ const Projects = () => {
       slides: [
         { title: "Skin Cancer", src: imgSkin, button: "Learn More" },
         { title: "GANs Output", src: imgGANs, button: "Explore" },
-        { title: "AI Health", src: imgAIBott, button: "Details" }
+        { title: "Detection", src: imgSkin, button: "Details" }  // Changed from imgAIBott to imgSkin
       ],
       demo: "https://your-demo-link.com/cancer",
       source: "https://github.com/yourusername/skin-cancer-detection",
